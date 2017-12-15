@@ -1,29 +1,24 @@
     puts "Do you want to encode or decode?"
     code = gets.chomp
-
     puts "input message to encode or decode."
     message_used = gets.chomp
-    message_used.downcase!
-
     message_array = message_used.split("")
-    puts message_array
+    #puts message_array
 
-def encoded_message(message_array)
-	message_array.each do |alphabet_hash|
+    alphabet1 = {"a" => n, "b" => o, "c" => p, "d" => q, "e" => r , "f" => s,
+    "g" => t, "h" => u, "i" => v, "j" => w, "k" => x, "l" => y, "m" => z,
+    "n" => a, "o" => b, "p" => c, "q" => d, "r" => e, "s" => f, "t" => g, 
+    "u" => h, "v" => i, "w" => j, "x" => k, "y" => l, "z" => m, " " => " "}
 
-end
-
-
-    alphabet_hash = {"a" => m, "b" => n, "c" => o, "d" => p, "e" => q , "f" => r,
-    "g" => s, "h" => t, "i" => u, "j" => v, "k" => w, "l" => x, "m" => y,
-    "n" => z, "o" => a, "p" => b, "q" => c, "r" => d, "s" => e, "t" => f, 
-    "u" => g, "v" => h, "w" => i, "x" => j, "y" => k, "z" => l}
-
-    output_message = ""
-
+    counter = 0
+    message_array.each do 
+    #encoded_message = encoded_message + alphabet_hash.fetch(alphabet1)
+    print message_array[counter]," ", alphabet1[message_array [counter]]
+    counter = counter + 1
+    end
 
 
 
 
 
-end
+  
